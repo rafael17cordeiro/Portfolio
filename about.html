@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-projects.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Botão que só aparece em telas pequenas -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu padrão para telas grandes -->
+        <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offcanvas para telas pequenas -->
+        <div
+          class="offcanvas offcanvas-start d-lg-none"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="section-title">
+        <h1 class="title-with-line">ABOUT ME</h1>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- Lado esquerdo (Imagem) -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="about-img">
+            <img src="img/Rafael.png" alt="Rafael" class="img-fluid" />
+          </div>
+        </div>
+
+        <!-- Lado direito (Texto) -->
+        <div class="col-md-6">
+          <h2 class="mb-3">
+            I am <span class="highlight">Rafael Cordeiro</span>
+          </h2>
+          <p>
+            I'm currently studying Computer Engineering at the Polytechnic
+            Institute of Leiria. I've been passionate about technology from an
+            early age, which naturally led me to explore programming and
+            software development. I'm a curious and motivated learner, always
+            eager to improve and take on new challenges. I enjoy working in
+            teams, value clear communication, and bring a proactive and
+            adaptable mindset to every project I’m involved in.
+          </p>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="label">Age</span>
+              <span class="value">: 19</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Nationality</span>
+              <span class="value">: Portuguese</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Languages</span>
+              <span class="value">: Portuguese, English</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Email</span>
+              <span class="value">: rafael17cordeiro@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-5">
+      <div class="section-title">
+        <h1 class="title-with-line">MY SKILLS</h1>
+      </div>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="ph-bold ph-code"></i>
+          <h3>Full Stack Development</h3>
+          <p>
+            Full stack developer with basic frontend skills in HTML, CSS,
+            JavaScript, and Bootstrap for building responsive interfaces. I have
+            some backend experience with PHP and API integration. I learned
+            these during university and have been improving by working on
+            personal projects.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <i class="ph ph-desktop"></i>
+          <h3>Desktop Apps</h3>
+          <p>
+            C, C++, Python Used to build desktop applications and strengthen my
+            understanding of programming fundamentals such as logic, algorithms,
+            and data structures.
+          </p>
+        </div>
+        <div class="skill-card">
+          <i class="ph-bold ph-git-branch"></i>
+          <h3>Version Control</h3>
+          <p>
+            Git, GitHub Used for version control, code sharing, and team
+            collaboration. Helped manage project history, track changes, and
+            contribute efficiently to group work.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
