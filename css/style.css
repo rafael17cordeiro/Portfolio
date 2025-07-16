@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg-color: #0d1117;
-  --text-color: #d4d4d4;
+  --bg-color: #0d1117; /*0d1117*/
+  --text-color: #d4d4d4; /*0d1117*/
+  --text-color-opac: #d4d4d496; /*0d1117*/
   --max-width: 1200px;
   --accent-color: #58a6ff;
   --accent-color-opac: rgba(88, 166, 255, 0.4);
@@ -40,14 +41,6 @@
 body {
   background-color: var(--bg-color) !important;
   min-height: 100vh;
-}
-
-body,
-a,
-button,
-input,
-textarea {
-  cursor: url("../cursor/Fluoro\ blue\ cursor\ .cur"), auto !important;
 }
 
 ::selection {
@@ -119,7 +112,7 @@ textarea {
 .title-with-line {
   position: relative;
   display: inline-block;
-  font-size: 2.5rem;
+
   font-weight: bold;
   color: white;
 }
@@ -135,6 +128,9 @@ textarea {
   border-radius: 5px;
 }
 
+.timeline-date {
+  color: var(--text-color-opac);
+}
 /*<------------------About Page -------------------->*/
 .info-list {
   max-width: 500px;
@@ -168,6 +164,41 @@ textarea {
   border-bottom: 5px solid var(--accent-color); /* borda em baixo */
 }
 
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline a {
+  color: var(--accent-color);
+}
+ul.timeline:before {
+  content: " ";
+  background: var(--accent-color);
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 1px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin-bottom: 200px;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+/*----------------------Projects Page-------------------------*/
 .skills {
   background-color: var(--bg-color);
 }
@@ -225,4 +256,80 @@ textarea {
 .skill-card p {
   color: rgb(175, 175, 175);
   font-size: 0.9rem;
+}
+.card {
+  transition: var(--transition);
+  border-radius: 10px !important;
+  background-color: var(--bg-color) !important;
+  border-left: 5px solid var(--accent-color-opac) !important;
+  border-bottom: 5px solid var(--accent-color-opac) !important;
+  padding-left: 10px !important; /* para separar a borda da imagem */
+  padding-bottom: 10px !important;
+}
+
+.card:hover {
+  transition: var(--transition);
+  transform: translateY(-10px);
+  border-left: 5px solid var(--accent-color) !important; /* borda esquerda */
+  border-bottom: 5px solid var(--accent-color) !important; /* borda em baixo */
+}
+
+.card-img-top {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.custom-btn-projects {
+  transition: var(--transition);
+  background-color: var(--accent-color-opac) !important;
+  color: var(--text-color) !important;
+}
+
+.custom-btn-projects:hover {
+  transition: var(--transition);
+  background-color: var(--accent-color) !important;
+}
+
+.hover-zoom {
+  overflow: hidden;
+}
+
+.hover-zoom img {
+  transition: var(--transition);
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.bg-html {
+  background: #ff5722;
+}
+
+.bg-css {
+  background: #87ceeb;
+}
+
+.bg-php {
+  background-color: #8892bf;
+}
+
+.bg-javascript {
+  background-color: #fff083;
+}
+
+.bg-sql {
+  background-color: #003b57;
+}
+
+.bg-bootstrap {
+  background-color: #d19aff;
+}
+
+.bg-arduino {
+  background-color: #20adff8c;
+}
+
+.bg-raspberry {
+  background-color: #ff6666;
 }
