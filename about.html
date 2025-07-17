@@ -20,6 +20,14 @@
     ></script>
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
 
   <body>
@@ -108,7 +116,13 @@
         </div>
 
         <!-- Lado direito (Texto) -->
-        <div class="col-md-6">
+        <div
+          class="col-md-6"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
           <h2 class="mb-3">
             <b>I am <span class="highlight">Rafael Cordeiro</span></b>
           </h2>
@@ -142,7 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5" data-aos="fade-up">
       <div class="section-title">
         <h1 class="title-with-line">MY SKILLS</h1>
       </div>
@@ -179,6 +193,9 @@
           </p>
         </div>
       </div>
+    </div>
+
+    <div class="container mt-5 mb-5" data-aos="fade-up">
       <div class="section-title mt-5">
         <h1 class="title-with-line">
           INTERNSHIPS <i class="ph ph-trend-up"></i>
@@ -250,4 +267,7 @@
       </div>
     </div>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>

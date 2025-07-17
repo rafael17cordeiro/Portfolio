@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
-
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style-projects.css" />
     <link
@@ -18,7 +17,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
 
@@ -101,7 +106,7 @@
       <div class="container mt-4">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- Card 1 -->
-          <div class="col">
+          <div data-aos="fade-up" data-aos-duration="600" class="col">
             <div class="card h-100 shadow-sm">
               <div class="hover-zoom">
                 <img
@@ -113,9 +118,9 @@
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Claudia e Filhos</h5>
                 <p class="card-text">
-                  This is a PHP website designed for online shopping. It allows
-                  users to place orders through the site, and the order details
-                  are sent via email for easy order management
+                  PHP website designed for online shopping. It allows users to
+                  place orders through the site, and the order details are sent
+                  via email
                 </p>
                 <div class="mt-auto">
                   <span class="badge bg-html me-1">HTML</span>
@@ -140,7 +145,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="col">
+          <div data-aos="fade-up" data-aos-duration="1000" class="col">
             <div class="card h-100 shadow-sm">
               <div class="hover-zoom">
                 <img
@@ -152,7 +157,7 @@
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">IOT Project</h5>
                 <p class="card-text">
-                  IoT system for smart schools: monitors temperature and motion,
+                  IoT system for smart schools monitors temperature and motion,
                   controls a servo motor, exposes an API, and shows data on a
                   web dashboard.
                 </p>
@@ -177,113 +182,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <div class="hover-zoom">
-                <img
-                  src="img/project3.png"
-                  class="card-img-top"
-                  alt="Project 1 Image"
-                />
-              </div>
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Take a look yourself</h5>
-                <p class="card-text">
-                  This is my personal GitHub portfolio page, where I showcase my
-                  main projects, skills, and experience as a developer. Feel
-                  free to explore the code behind each project.
-                </p>
-                <div class="mt-auto">
-                  <a
-                    href="https://github.com/rafael17cordeiro"
-                    target="_blank"
-                    class="btn custom-btn-projects btn-sm d-block mt-3"
-                  >
-                    View on GitHub
-                    <i class="ph ph-github-logo"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <div class="hover-zoom">
-                <img
-                  src="img/project1.png"
-                  class="card-img-top"
-                  alt="Project 1 Image"
-                />
-              </div>
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Claudia e Filhos</h5>
-                <p class="card-text">
-                  This is a PHP website designed for online shopping. It allows
-                  users to place orders through the site, and the order details
-                  are sent via email for easy order management
-                </p>
-                <div class="mt-auto">
-                  <span class="badge bg-html me-1">HTML</span>
-                  <span class="badge bg-css me-1">CSS</span>
-                  <span class="badge bg-javascript text-dark me-1"
-                    >JavaScript</span
-                  >
-                  <span class="badge bg-php me-1">PHP</span>
-
-                  <span class="badge bg-sql">SQL</span>
-                  <a
-                    href="https://github.com/PAP-Claudia-e-Filhos-LDA/PAP-Claudia-e-Filhos-HTML"
-                    target="_blank"
-                    class="btn custom-btn-projects btn-sm d-block mt-3"
-                  >
-                    View on GitHub
-                    <i class="ph ph-github-logo"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <div class="hover-zoom">
-                <img
-                  src="img/project2.png"
-                  class="card-img-top"
-                  alt="Project 1 Image"
-                />
-              </div>
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">IOT Project</h5>
-                <p class="card-text">
-                  IoT system for smart schools: monitors temperature and motion,
-                  controls a servo motor, exposes an API, and shows data on a
-                  web dashboard.
-                </p>
-                <div class="mt-auto">
-                  <span class="badge bg-html me-1">HTML</span>
-                  <span class="badge bg-css me-1">CSS</span>
-                  <span class="badge bg-bootstrap me-1">Bootstrap</span>
-                  <span class="badge bg-javascript text-dark">JavaScript</span>
-                  <span class="badge bg-arduino">Arduino</span>
-                  <span class="badge bg-raspberry">Raspberry</span>
-                  <a
-                    href="https://github.com/rafael17cordeiro/IOT-Project"
-                    target="_blank"
-                    class="btn custom-btn-projects btn-sm d-block mt-3"
-                  >
-                    View on GitHub
-                    <i class="ph ph-github-logo"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col">
+          <div data-aos="fade-up" data-aos-duration="1300" class="col">
             <div class="card h-100 shadow-sm">
               <div class="hover-zoom">
                 <img
@@ -316,4 +215,7 @@
       </div>
     </div>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
